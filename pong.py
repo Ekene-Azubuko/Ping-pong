@@ -15,7 +15,7 @@ score_a = 0
 score_b = 0
 
 #Paddle A
-paddle_color = input("Enter paddle color: ")
+paddle_color = input("Enter paddle color: ").lower()
 paddle_a = turtle.Turtle()
 paddle_a.speed(0)
 paddle_a.shape("square")
@@ -34,8 +34,8 @@ paddle_b.penup()
 paddle_b.goto(350,0)
 
 #Ball
-ball_shape = input("Enter ball shape: ")
-ball_color = input("Enter ball color: ")
+ball_shape = input("Enter ball shape: ").lower()
+ball_color = input("Enter ball color: ").lower()
 ball = turtle.Turtle()
 ball.speed(0)
 ball.shape(ball_shape)
